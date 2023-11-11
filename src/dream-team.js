@@ -20,8 +20,7 @@ function createDreamTeam(members) {
   }
   members.forEach((item) => {
     typeof item === "string"
-      ? // ? dreamTeam.push(item.trim()[0].toUpperCase())
-        dreamTeam.push(item.trim().charAt(0).toUpperCase())
+      ? dreamTeam.push(item.trim().charAt(0).toUpperCase())
       : "";
   });
 
