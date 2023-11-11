@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "Запустить программу",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}\\src\\dns-stats.js"
+      "program": "${workspaceFolder}\\src\\encode-line.js"
     }
   ]
 }
