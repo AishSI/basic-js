@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "Запустить программу",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}\\src\\mine-sweeper.js"
+      "program": "${workspaceFolder}\\src\\recursive-depth.js"
     }
   ]
 }
