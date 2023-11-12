@@ -1,4 +1,4 @@
-const { NotImplementedError } = require('../extensions/index.js');
+const { NotImplementedError } = require("../extensions/index.js");
 
 /**
  * The MAC-48 address is six groups of two hexadecimal digits (0 to 9 or A to F),
@@ -14,10 +14,13 @@ const { NotImplementedError } = require('../extensions/index.js');
  * For 00-1B-63-84-45-E6, the output should be true.
  *
  */
-function isMAC48Address(/* n */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+function isMAC48Address(n) {
+  // ^ - начало строки, нужны 5 групп из буквенно-цифровых подгрупп в 2 символа,
+  // с разделителем после них, и такая же замыкающая буквенно-цифровая группа.
+  let regexp = /^([\da-f]{2}[:.-]){5}([\da-f]{2})$/i;
+  return regexp.test(n);
 }
+
 module.exports = {
-  isMAC48Address
+  isMAC48Address,
 };
